@@ -178,6 +178,96 @@ const Index = () => {
       </FadeIn>
 
       <FadeIn>
+        <div className="my-14">
+          <p className="font-heading text-[clamp(28px,4vw,38px)] leading-[1.35] tracking-[-0.8px] mb-6">
+            Pricing
+          </p>
+          <p className="text-[17px] leading-[1.75] tracking-[-0.1px] mb-8">
+            We give you full machines that you can slice for your users. Since many VMs are idle most of the time we suggest having a larger concurrency per CPU. The platform will take care of concurrency and scheduling.
+          </p>
+          <div className="overflow-x-auto rounded-lg border border-border/50">
+            <table className="w-full text-left text-[14px]">
+              <thead>
+                <tr className="border-b border-border/50 bg-[hsl(0,0%,97%)]">
+                  <th className="px-5 py-3 font-medium">Tier</th>
+                  <th className="px-5 py-3 font-medium">CPU pool</th>
+                  <th className="px-5 py-3 font-medium">Memory pool</th>
+                  <th className="px-5 py-3 font-medium">Available disk</th>
+                  <th className="px-5 py-3 font-medium">Concurrency limit *</th>
+                  <th className="px-5 py-3 font-medium">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-border/50">
+                  <td className="px-5 py-3 font-medium">Free</td>
+                  <td className="px-5 py-3">shared upto 2vCPU</td>
+                  <td className="px-5 py-3">shared upto 2GB</td>
+                  <td className="px-5 py-3">3GB per VM</td>
+                  <td className="px-5 py-3">5</td>
+                  <td className="px-5 py-3">Free</td>
+                </tr>
+                <tr className="border-b border-border/50">
+                  <td className="px-5 py-3 font-medium">Medium</td>
+                  <td className="px-5 py-3">8</td>
+                  <td className="px-5 py-3">16GB</td>
+                  <td className="px-5 py-3">50GB (addable)</td>
+                  <td className="px-5 py-3">50</td>
+                  <td className="px-5 py-3">$300</td>
+                </tr>
+                <tr className="border-b border-border/50">
+                  <td className="px-5 py-3 font-medium">Large</td>
+                  <td className="px-5 py-3">64</td>
+                  <td className="px-5 py-3">512GB</td>
+                  <td className="px-5 py-3">3800GB</td>
+                  <td className="px-5 py-3">500</td>
+                  <td className="px-5 py-3">$3,000</td>
+                </tr>
+                <tr>
+                  <td className="px-5 py-3 font-medium">Custom</td>
+                  <td className="px-5 py-3"></td>
+                  <td className="px-5 py-3"></td>
+                  <td className="px-5 py-3"></td>
+                  <td className="px-5 py-3"></td>
+                  <td className="px-5 py-3">Talk to us</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-4 space-y-1 text-[13px] text-muted-foreground">
+            <p>* Concurrency limit does not include hibernated VMs, it is only suggested based on CPU overcommitment.</p>
+            <p>** Users can add one or more of these to their pool at any time, for example 2x medium, 3x large etc.</p>
+          </div>
+        </div>
+      </FadeIn>
+
+      <FadeIn>
+        <div className="my-14 space-y-7">
+          <p className="font-heading text-[clamp(28px,4vw,38px)] leading-[1.35] tracking-[-0.8px]">
+            Built for B2B agent platforms.
+          </p>
+          <p className="text-[17px] leading-[1.75] tracking-[-0.1px]">
+            If you're building the next Lovable, Devin, or Bolt, your users
+            don't just need a sandbox that runs a script and dies. They need a
+            computer that remembers what it installed yesterday, keeps their
+            files between sessions, and picks up exactly where it left off.
+            Sandboxes give you isolation. OpenComputer gives you isolation{" "}
+            <em className="font-heading text-[19px]">and</em> persistence.
+          </p>
+          <p className="text-[17px] leading-[1.75] tracking-[-0.1px]">
+            Ephemeral sandboxes are stateless - every session starts from
+            scratch. OpenComputer VMs are stateful - they hibernate instead of
+            dying, so state survives across sessions without you having to
+            snapshot/restore manually.
+          </p>
+          <p className="text-[17px] leading-[1.75] tracking-[-0.1px]">
+            No more re-installing node_modules from scratch because the
+            container died between API calls. Your VM stays alive as long as
+            you need it. When it's idle, it hibernates to disk, not nuked.
+          </p>
+        </div>
+      </FadeIn>
+
+      <FadeIn>
         <div className="mt-20 pt-14 border-t border-border">
           <div className="flex gap-3 items-center flex-wrap">
             <a
